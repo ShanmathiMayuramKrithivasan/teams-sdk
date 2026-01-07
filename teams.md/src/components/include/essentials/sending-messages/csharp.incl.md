@@ -121,7 +121,7 @@ import TabItem from '@theme/TabItem';
     ```csharp
     app.OnMessage(async context =>
     {
-        // Send a private reply visible only to the sender
+        // Send a targeted message visible only to the sender
         await context.Send("Hey! This is a private message just for you!", isTargeted: true);
     });
     ```

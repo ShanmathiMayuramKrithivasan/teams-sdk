@@ -63,7 +63,7 @@ public static class Notifications
         if (conversationId is null) return;
 
         // Set Recipient to specify who should receive the private message
-        var targetedMessage = new MessageActivity("Hey! This is a private message just for you!")
+        var targetedMessage = new MessageActivity("This is a private reminder just for you!")
         {
             Recipient = new ChannelAccount { Id = userId }
         };
