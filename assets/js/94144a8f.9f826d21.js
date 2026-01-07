@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkteams_md=self.webpackChunkteams_md||[]).push([[6124],{58834:(t,e,s)=>{s.r(e),s.d(e,{default:()=>u});var n=s(22147),a=s(10883),r=s(62540);function u(){const t=(0,a.Ay)("/");return(0,r.jsx)(n.rd,{to:`${t}python/getting-started`})}}}]);
