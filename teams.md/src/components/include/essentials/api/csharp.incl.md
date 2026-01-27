@@ -19,25 +19,14 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs>
-  <TabItem label="Controller" value="controller" default>
-    ```csharp
-    [Message]
-    public async Task OnMessage([Context] MessageActivity activity, [Context] ApiClient api)
-    {
-        var members = await api.Conversations.Members.Get(context.Conversation.Id);
-    }
-    ```
-  </TabItem>
-  <TabItem label="Minimal" value="minimal">
-    ```csharp
-    app.OnMessage(async context =>
-    {
-        var members = await context.Api.Conversations.Members.Get(context.Conversation.Id);
-    });
-    ```
-  </TabItem>
-</Tabs>
+
+```csharp
+app.OnMessage(async context =>
+{
+    var members = await context.Api.Conversations.Members.Get(context.Conversation.Id);
+});
+```
+
 
 <!-- proactive-example -->
 
