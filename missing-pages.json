@@ -15,6 +15,9 @@
   "in-depth-guides/ai/a2a/a2a-server": [
     "csharp"
   ],
+  "in-depth-guides/ai/mcp/mcp-server": [
+    "csharp"
+  ],
   "in-depth-guides/tabs": [
     "python"
   ],
@@ -43,6 +46,10 @@
   ],
   "migrations": [
     "csharp"
+  ],
+  "migrations/slack-bolt": [
+    "csharp",
+    "python"
   ],
   "migrations/v1": [
     "csharp"
