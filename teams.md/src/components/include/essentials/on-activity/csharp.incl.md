@@ -26,7 +26,7 @@ app.OnMessage(async (context, cancellationToken) =>
         return;
     }
 
-    context.Next();
+    await context.Next();
 });
 ```
 
