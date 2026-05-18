@@ -20,7 +20,7 @@ In the above example, the `context.activity` parameter is of type `MessageActivi
 ```csharp
 app.OnMessage(async (context, cancellationToken) =>
 {
-    if (context.Activity.IsTargeted == true)
+    if (context.Activity.Recipient?.IsTargeted == true)
     {
         await context.Send($"Received slash command: {context.Activity.Text}", cancellationToken);
         return;

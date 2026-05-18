@@ -20,7 +20,7 @@ In the above example, the `activity` parameter is of type `MessageActivity`, whi
 
 ```typescript
 app.on('message', async ({ activity, send, next }) => {
-  if (activity.isTargeted) {
+  if (activity.recipient?.isTargeted) {
     await send(`Received slash command: ${activity.text}`);
     return;
   }

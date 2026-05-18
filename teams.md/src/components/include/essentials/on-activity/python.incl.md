@@ -19,7 +19,7 @@ In the above example, the `ctx.activity` parameter is of type `MessageActivity`,
 ```python
 @app.on_message
 async def handle_message(ctx: ActivityContext[MessageActivity]):
-    if ctx.activity.is_targeted:
+    if ctx.activity.recipient and ctx.activity.recipient.is_targeted:
         await ctx.send(f"Received slash command: {ctx.activity.text}")
         return
 
